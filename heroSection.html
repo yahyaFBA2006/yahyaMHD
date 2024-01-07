@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    
+
+
+
+body{
+    background: url('./addition/aleksandra-khaprenko-0PPw9irzLIw-unsplash.jpg'); 
+    margin: 0px;
+    }
+    body .FormSection{
+            display: flex;
+            justify-content: center; 
+            margin: 0;
+        }
+
+        form {
+            background-color: #eafaff;
+            padding: 10px 40px;
+            border-radius: 8px;
+            margin: auto;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 5px solid #ccc;
+        }
+
+        button {
+        box-shadow: 0 0 5px cyan,
+        0 0 25px cyan;
+        margin: 5px 20px;
+        }
+        button:hover {
+        box-shadow: 0 0 5px cyan,
+        0 0 25px cyan, 0 0 50px cyan,
+        0 0 100px cyan, 0 0 200px cyan, 0 0 900px cyan;
+        transform: scale(1.2);
+        transition: all 0.4s;
+        cursor: pointer;
+        background-color: cyan;
+        }
+
+
+        .animated-text {
+            font-size: 30px;
+            color: #FF0000;
+            animation: colorchange 6s infinite;
+        }
+
+        @keyframes colorchange {
+            0% { color: rgb(13, 13, 255); }
+            25% { color: rgb(14, 255, 14); }
+            50% { color: red; }
+            75% { color: rgb(255, 0, 255); }
+            100% { color: rgb(255, 251, 0); }
+        }
+
+</style>
+
+<body>
+
+        <section align="center" >
+            
+            <div>
+                <h1 class="animated-text">
+                    Welcome Dear visitors, please Login 
+                </h1> 
+            </div>
+
+            <div class="FormSection">
+                <form action="https://www.ensia.edu.dz/fr/" method="post" target="_blank">
+                    <label for="Username">Username</label>
+                    <input type="text" name="Username" placeholder="ENTER THE Username" id="Username">
+                    <label for="Password">Password</label>
+                    <input type="password" name="password" placeholder="ENTER YOUR Password" id="Password">
+                    <button class="button" type="reset">Reset</button>
+                    <button class="button" type="submit">Login</button>
+                </form>
+    </div>
+    
+
+    
+            <div>
+                <marquee behavior="scroll" direction="right">
+                    <img src="./gif/peopleRunning.gif" alt="group of people running" width="270px" hieght="270px">
+                </marquee>
+            </div>
+
+        </section>
+
+
+</body>
+</html>
